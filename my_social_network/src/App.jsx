@@ -1,5 +1,6 @@
 import Login from "./pages/Login/Login";
-import {BrowserRouter as Router, Routes, Route, Link, NavLink} from "react-router-dom";
+import Admin from "./pages/Admin/Admin";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import './App.css';
 
 
@@ -9,9 +10,9 @@ function App() {
     <div>
       <Router>
         <Routes>
-          <Route path="/login" element={<Login/>} exact />
+          <Route path="/login" element={<Login/>}  />
             
-          {/* <Route path="/" element={<p></p>} /> */}
+          <Route exact path="/admin" element={<Admin/>} />
             
         </Routes>
     </Router>  
